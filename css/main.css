@@ -1,0 +1,149 @@
+@font-face {
+  font-family: "amsterdam-four";
+  src: url(../fonts/amsterdam-four.ttf);
+}
+@font-face {
+  font-family: "RumbleBrave";
+  src: url(../fonts/Rumble/RumbleBrave.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.burger-menu {
+  background-image: url(../img/menu-container.png);
+  padding: 10px;
+  background-size: cover;
+  cursor: pointer;
+}
+.burger-menu .menu-icon {
+  max-width: 35px;
+  display: block;
+}
+
+.hero-section {
+  min-height: 870px;
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  z-index: 3;
+}
+.hero-section .header {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-section .header .logo img {
+  max-width: 300px;
+}
+.hero-section .hero-content {
+  position: absolute;
+  transform: translate(-50%, -20%);
+  top: 50%;
+  left: 50%;
+  width: 100%;
+}
+.hero-section .hero-title {
+  text-align: center;
+  font-size: 85px;
+  font-family: "amsterdam-four";
+  background: -webkit-radial-gradient(#bf9437, #e4d471);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero-section .hero-subtitle {
+  text-align: center;
+  font-size: 47px;
+  color: #d4901b;
+  font-family: "RumbleBrave";
+}
+.hero-section .hero-img {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: -50px;
+}
+
+.about-us {
+  background-image: url("../img/contact-bg.jpg");
+  background-position: left top;
+  min-height: 780px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.about-us .right-abs {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.our-mission {
+  background-image: url("../img/mission-bg.jpg");
+  background-position: right;
+  min-height: 910px;
+  background-size: 100%;
+  position: relative;
+  z-index: 1;
+}
+.our-mission .stand-lady {
+  position: absolute;
+  top: -100px;
+}
+
+.offering {
+  background-image: url("../img/offering.jpg");
+  background-position: right -100px;
+  min-height: 910px;
+  background-size: cover;
+  position: relative;
+  z-index: 3;
+}
+
+.join-us {
+  background-image: url("../img/join-us-bg.jpg");
+  background-position: right center;
+  min-height: 650px;
+  background-size: cover;
+}
+
+.testimonials {
+  background-image: url("../img/testimonials.jpg");
+  background-position: right top;
+  min-height: 900px;
+  background-size: cover;
+  position: relative;
+}
+
+.session {
+  background-image: url("../img/session.jpg");
+  background-position: right top;
+  min-height: 830px;
+  background-size: 100%;
+  padding-top: 300px;
+}
+.session .session-content {
+  width: 100%;
+  min-height: 500px;
+  background: radial-gradient(circle, rgba(215, 171, 47, 0.65) 0%, rgba(212, 145, 27, 0.65) 100%, #312e61 255%);
+  border-radius: 10px;
+}
+
+.contact {
+  background-image: url("../img/contact-bg.jpg");
+  background-position: right top;
+  min-height: 900px;
+  background-size: cover;
+  position: relative;
+}
+
+/*# sourceMappingURL=main.css.map */
