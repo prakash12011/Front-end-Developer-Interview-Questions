@@ -441,6 +441,11 @@ a {
   line-height: 35px;
   color: #696969;
   margin-bottom: 20px;
+
+  strong {
+    font-family: 'FuturaBT';
+    font-weight: 500;
+  }
 }
 
 .read-more {
@@ -500,3 +505,51 @@ a {
   text-align: center;
 }
 .m0{ margin: 0; }
+
+
+// Inner Page
+.inner-page {
+
+  .hero-section {
+    min-height: 350px;
+    background-image: url(../img/inner-bg.jpg);
+  }
+
+  section.contact {
+    padding: 50px 0;
+    min-height: 500px;
+  }
+}
+
+
+// About Inner
+.inner-page {
+
+  .about {
+    position: relative;
+
+    .abs-pic {
+      position: absolute;
+      left: 0;
+      max-height: 100%;
+
+      &.right {
+        right: 0;
+        left: auto;
+        z-index: 0;
+        overflow: hidden;
+        top: 0;
+      }
+    }
+  }
+
+  .join-us {
+    min-height: 500px;
+
+    .section-description { text-align: center; }
+  }
+
+  .about-more {
+    background-image: url(../img/DSC07935.jpg);
+  }
+}

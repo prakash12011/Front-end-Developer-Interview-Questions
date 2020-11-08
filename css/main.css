@@ -50,6 +50,9 @@
 .dgrid.col-1-1 {
   grid-template-columns: 1fr 1fr;
 }
+.dgrid.col-1-2 {
+  grid-template-columns: 1fr 2fr;
+}
 .dgrid.col-1-1-1 {
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -418,6 +421,10 @@ a {
   color: #696969;
   margin-bottom: 20px;
 }
+.section-description strong {
+  font-family: "FuturaBT";
+  font-weight: 500;
+}
 
 .read-more {
   font-family: "FuturaBT";
@@ -471,6 +478,40 @@ a {
 
 .m0 {
   margin: 0;
+}
+
+.inner-page .hero-section {
+  min-height: 350px;
+  background-image: url(../img/inner-bg.jpg);
+}
+.inner-page section.contact {
+  padding: 50px 0;
+  min-height: 500px;
+}
+
+.inner-page .about {
+  position: relative;
+}
+.inner-page .about .abs-pic {
+  position: absolute;
+  left: 0;
+  max-height: 100%;
+}
+.inner-page .about .abs-pic.right {
+  right: 0;
+  left: auto;
+  z-index: 0;
+  overflow: hidden;
+  top: 0;
+}
+.inner-page .join-us {
+  min-height: 500px;
+}
+.inner-page .join-us .section-description {
+  text-align: center;
+}
+.inner-page .about-more {
+  background-image: url(../img/DSC07935.jpg);
 }
 
 /*# sourceMappingURL=main.css.map */

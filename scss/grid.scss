@@ -6,6 +6,10 @@
     grid-template-columns: 1fr 1fr;
   }
 
+  &.col-1-2 {
+    grid-template-columns: 1fr 2fr;
+  }
+
   &.col-1-1-1 {
     grid-template-columns: 1fr 1fr 1fr;
   }
