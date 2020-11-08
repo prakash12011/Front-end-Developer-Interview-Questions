@@ -4,7 +4,36 @@
 }
 @font-face {
   font-family: 'RumbleBrave';
-  src: url(../fonts/Rumble/RumbleBrave.ttf);
+  src: url(../fonts/RumbleBrave.ttf);
+}
+@font-face {
+  font-family: 'RumbleBraveOutline';
+  src: url(../fonts/Rumble/RumbleBraveOutline.otf);
+}
+@font-face {
+  font-family: 'Futura-Condensed';
+  font-weight: 600;
+  src: url(../fonts/Fonts/FuturaBtCNBold.ttf);
+}
+@font-face {
+  font-family: 'Futura-Condensed';
+  font-weight: 100;
+  src: url(../fonts/Fonts/Futura-CondensedLight.otf);  
+}
+@font-face {
+  font-family: 'FuturaBtBK';
+  src: url(../fonts/Fonts/FUTURAN.ttf);  
+}
+@font-face {
+  font-family: 'FuturaBtBK';
+  font-weight: 100;
+  font-style: italic;
+  src: url(../fonts/Fonts/FuturaBtBKLightItalic.ttf);  
+}
+@font-face {
+  font-family: 'FuturaBT';
+  font-weight: 500;
+  src: url(../fonts/Fonts/FuturaBT-medium.otf);
 }
 
 // @font-face {
@@ -23,3 +52,6 @@
 //   font-family: amsterdam-four;
 //   src: url(../fonts/amsterdam-four.ttf);
 // }
+
+.FuturaBtBK { font-family: 'FuturaBtBK' !important; }
+.philosopher { font-family: "philosopher",sans-serif !important; }
