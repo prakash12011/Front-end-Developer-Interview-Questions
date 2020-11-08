@@ -140,20 +140,24 @@ a {
   }
 
   .offering {
-    padding: 25px;
     background: white;
     border-radius: 10px;
     position: relative;
     border: 2px solid #e7e7e7;
     transition: .3s;
 
+    &-content {
+      padding: 25px;
+    }
+
     &:focus, &:hover, &.active {
       border: 2px solid #e5c978;
     }
 
     &-image {
-      margin-bottom: 40px;
+      margin-bottom: 20px;
       display: block;
+      width: 100%;
     }
 
     &-title {

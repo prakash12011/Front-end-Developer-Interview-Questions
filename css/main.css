@@ -173,19 +173,22 @@ a {
   margin-top: 50px;
 }
 .offerings .offering {
-  padding: 25px;
   background: white;
   border-radius: 10px;
   position: relative;
   border: 2px solid #e7e7e7;
   transition: 0.3s;
 }
+.offerings .offering-content {
+  padding: 25px;
+}
 .offerings .offering:focus, .offerings .offering:hover, .offerings .offering.active {
   border: 2px solid #e5c978;
 }
 .offerings .offering-image {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   display: block;
+  width: 100%;
 }
 .offerings .offering-title {
   font-size: 25px;
