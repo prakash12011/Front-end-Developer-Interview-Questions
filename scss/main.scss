@@ -35,6 +35,10 @@ a {
   .menu-icon {
     max-width: 35px;
     display: block;
+
+    @media(max-width: 640px) {
+      max-width: 25px;
+    }
   }
 }
 
@@ -251,6 +255,7 @@ a {
 
     .decorated-title { 
       transform: translateX(0%);
+      text-align: center;
     }
   }
 }
