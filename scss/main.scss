@@ -55,6 +55,14 @@ a {
     .logo img {
       max-width: 300px;
     }
+
+    &.container {
+      max-width: 1600px;
+
+      @media(max-width: 1360px) {
+        max-width: 1200px;        
+      }
+    }
   }
 
   .hero {

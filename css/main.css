@@ -121,6 +121,14 @@ a {
 .hero-section .header .logo img {
   max-width: 300px;
 }
+.hero-section .header.container {
+  max-width: 1600px;
+}
+@media (max-width: 1360px) {
+  .hero-section .header.container {
+    max-width: 1200px;
+  }
+}
 .hero-section .hero-content {
   position: absolute;
   transform: translate(-50%, -20%);
