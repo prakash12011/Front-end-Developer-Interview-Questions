@@ -63,7 +63,11 @@ a {
     &.container {
       max-width: 1600px;
 
-      @media(max-width: 1360px) {
+      @media(max-width: 1440px) {
+        max-width: 1300px;        
+      }
+
+      @media(max-width: 1300px) {
         max-width: 1200px;        
       }
     }
@@ -133,7 +137,7 @@ a {
 
     @media(max-width: 640px) {
       &-title {
-        font-size: 35px;
+        font-size: 30px;
       }
 
       &-subtitle {
@@ -160,22 +164,38 @@ a {
 
     .header .logo img {
       max-width: 200px;
+    }    
+  }
+  
+  @media(min-width: 768px) {
+    .burger-menu {
+      margin-right: 20px;   
     }
   }
 
   @media(max-width: 640px) {
+    .header {
+      padding-top: 10px;
+
+      .logo img {
+        max-width: 150px;
+      } 
+    }
+    
     min-height: 450px;
-    background-image: url(../img/header-bg.jpg);
+    background-image: url(../img/mobile-home-bg.png);
+    background-position: center 40px;
+    background-size: 840px;
   }
 }
 
 .about-us {
   background-image: url("../img/contact-bg.jpg");
   background-position: left top;
-  min-height: 450px;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  min-height: 450px;
 
   .right-abs {
     position: absolute;
@@ -317,7 +337,7 @@ a {
       &:hover {
         background: rgb(242,210,103);
         background: linear-gradient(0deg, rgba(242,210,103,1) 0%, rgba(212,144,26,1) 33%, rgba(242,210,103,1) 67%, rgba(212,144,26,1) 100%);
-        border: 0;
+        border: 1px solid rgba(212,144,26,1);
         color: white;
       }
     }
@@ -369,9 +389,15 @@ a {
     margin: 20px auto 0;
     font-size: 20px ;
     font-family: 'FuturaBT';
-    color: #303030;
+    color: #696969;
     border-radius: 25px;
     transition: .5s;
+
+    &:hover {
+      box-shadow: 0px 5px 10px rgba($color: #000000, $alpha: .25);
+      // background: -webkit-linear-gradient(right, #f2d267 1%, #d4901a 35%, #f2d267 69%, #d4901a 100%);
+      // color: white;
+    }
   }
 
   @media(max-width: 1199px) {
@@ -526,9 +552,15 @@ a {
     margin: 20px auto 0;
     font-size: 20px ;
     font-family: 'FuturaBT';
-    color: #303030;
+    color: #696969;
     border-radius: 25px;
     transition: .5s;
+
+    &:hover {
+      // color: white;
+      // background: -webkit-linear-gradient(right, #f2d267 1%, #d4901a 35%, #f2d267 69%, #d4901a 100%);
+      box-shadow: 0px 5px 10px rgba($color: #000000, $alpha: .25);
+    }
   }
 
   @media(max-width: 768px) {
@@ -625,12 +657,12 @@ a {
 }
 
 .site-footer {
-  background: #000;
+  background: -webkit-linear-gradient(right, #f2d267 1%, #d4901a 35%, #f2d267 69%, #d4901a 100%);
   padding: 30px;
 
   .copyright-text {
     font-size: 21px;
-    color: #d7ab2f;
+    color: white;
 
     @media(max-width: 768px) {
       font-size: 16px;
@@ -744,7 +776,7 @@ a {
     border: 1px solid #878787;
 
     &:hover {
-      border: 0;
+      border: 1px solid transparent;
       background: -webkit-linear-gradient(
         right,
         #f2d267 1%,
@@ -771,8 +803,13 @@ a {
     cursor: pointer;
     background: rgb(242,210,103);
     background: linear-gradient(0deg, rgba(242,210,103,1) 0%, rgba(212,144,26,1) 33%, rgba(242,210,103,1) 67%, rgba(212,144,26,1) 100%);
-    border: 0;
+    border-color: transparent;
     border-radius: 25px;
+    transition: .5s;
+
+    &:hover {
+      box-shadow: 0px 5px 10px rgba($color: #000000, $alpha: .25);
+    }
   }
 }
 
@@ -802,7 +839,9 @@ a {
 
   .hero-section {
     min-height: 350px;
-    background-image: url(../img/inner-bg.jpg);
+    background-image: url(../img/header-bg-mobile.jpg);
+    background-size: 540px;
+    background-position: center 10px;
 
     @media(max-width: 640px) {
       min-height: 150px;
@@ -825,11 +864,17 @@ a {
 
   .about {
     position: relative;
+    background-image: url("../img/about-bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     .abs-pic {
       position: absolute;
       left: 0;
       max-height: 100%;
+      z-index: -1;
+      bottom: -25px;
 
       &.right {
         right: 0;
@@ -872,10 +917,22 @@ a {
         left: -20px;
         bottom: -20px;
         right: -20px;
+        z-index: 9;
 
         &.right {
           top: -60px;
           width: 100%;
+        }
+      }
+
+      @media(max-width: 576px) {
+        &.right {
+          top: 00px;
+          width: 500px;
+          left: -30px;
+          height: 600px;
+          object-fit: cover;
+          right: 0;
         }
       }
     }
@@ -897,5 +954,32 @@ a {
 
   .about-more {
     background-image: url(../img/DSC07935.jpg);
+
+    @media(max-width: 640px) {
+      padding-top: 0;
+      padding-bottom: 0;
+
+      .container {
+        padding: 0;
+
+        .dgrid.col-1-1 {
+          display: block;
+        }
+
+        .half {
+          padding: 30px 20px;
+          max-width: 100vw;
+          background: #fff;
+
+          &:nth-child(3) {
+            display: none;
+          }
+
+          .read-more {
+            padding: .5rem 2rem;
+          }
+        }
+      }
+    }
   }
 }
