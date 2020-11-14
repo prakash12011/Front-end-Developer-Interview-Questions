@@ -1,0 +1,21 @@
+@mixin cursiveHeading($color: inherit, $fontSize: 70px, $gredient: true) {
+  text-align: center;
+  font-size: $fontSize;
+  font-family: "amsterdam-four";
+  @if $gredient {
+    background: -webkit-linear-gradient(
+      right,
+      #f2d267 1%,
+      #d4901a 35%,
+      #f2d267 69%,
+      #d4901a 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  color: $color;
+}
+
+.cursive-heading {
+  @include cursiveHeading(white, 45px, false);
+}

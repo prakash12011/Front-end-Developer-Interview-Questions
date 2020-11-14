@@ -1,5 +1,7 @@
 @import "./fonts.scss";
 @import "./grid.scss";
+@import "./Particles/title";
+@import "./Particles/margins";
 
 * {
   box-sizing: border-box;
@@ -7,7 +9,7 @@
   padding: 0;
 }
 
-img {
+img { 
   max-width: 100%;
 }
 
@@ -83,18 +85,7 @@ a {
     }
 
     &-title {
-      text-align: center;
-      font-size: 70px;
-      font-family: "amsterdam-four";
-      background: -webkit-linear-gradient(
-        right,
-        #f2d267 1%,
-        #d4901a 35%,
-        #f2d267 69%,
-        #d4901a 100%
-      );
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      @include cursiveHeading();
     }
 
     &-subtitle {
@@ -840,10 +831,10 @@ a {
   .hero-section {
     min-height: 350px;
     background-image: url(../img/header-bg-mobile.jpg);
-    background-size: 540px;
     background-position: center 10px;
 
     @media(max-width: 640px) {
+      background-size: 540px;
       min-height: 150px;
     }
   }
@@ -855,6 +846,34 @@ a {
     @media(max-width: 640px) {
       padding-top: 20px;
     }
+  } 
+
+  .class {
+    grid-template-columns: 300px 1fr;
+    align-items: center;
+    margin-top: 40px;
+
+    &-title {
+      text-align: left;
+      background: -webkit-linear-gradient(
+        right,
+        #f2d267 1%,
+        #d4901a 35%,
+        #f2d267 69%,
+        #d4901a 100%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      padding-left: 35px;
+    }
+
+    @media(max-width: 640px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .discount {
+    padding: 50px 0;
   }
 }
 
@@ -871,9 +890,9 @@ a {
 
     .abs-pic {
       position: absolute;
-      left: 0;
+      left: auto;
       max-height: 100%;
-      z-index: -1;
+      z-index: 9;
       bottom: -25px;
 
       &.right {
@@ -948,12 +967,15 @@ a {
 
   .join-us {
     min-height: 400px;
+    position: relative;
+    z-index: 9;
 
     .section-description { text-align: center; }
   }
 
   .about-more {
     background-image: url(../img/DSC07935.jpg);
+    overflow: hidden;
 
     @media(max-width: 640px) {
       padding-top: 0;
@@ -981,5 +1003,30 @@ a {
         }
       }
     }
+  }
+}
+
+
+
+.paint-brush {
+  font-family: "philosopher",sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+  color: #696969;
+  position: relative;
+  padding: 20px 10%;
+  width: max-content;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  &-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &-text {
+    position: relative;
   }
 }
