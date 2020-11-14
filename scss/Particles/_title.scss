@@ -18,4 +18,12 @@
 
 .cursive-heading {
   @include cursiveHeading(white, 45px, false);
+
+  @media(max-width: 991px) {
+    font-size: 40px;
+  }
+
+  @media(max-width: 640px) {
+    font-size: 27px;
+  }
 }
