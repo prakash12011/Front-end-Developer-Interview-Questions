@@ -730,7 +730,7 @@ a {
   }
 
   @media(max-width: 768px) {
-    font-size: 22px;
+    font-size: 25px;
     line-height: 36px;
     text-align: center;
   }
@@ -840,7 +840,7 @@ a {
     background-position: center 10px;
 
     @media(max-width: 640px) {
-      background-size: 540px;
+      background-size: cover;
       min-height: 150px;
     }
   }
