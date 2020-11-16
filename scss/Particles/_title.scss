@@ -16,8 +16,35 @@
   color: $color;
 }
 
+@mixin gredientText($color: inherit, $fontSize: 70px, $gredient: true) {
+  text-align: center;
+  font-size: $fontSize;
+  font-family: "Futura-Condensed";
+  font-weight: 700;
+  @if $gredient {
+    background: -webkit-linear-gradient(
+      right,
+      #f2d267 1%,
+      #d4901a 35%,
+      #f2d267 69%,
+      #d4901a 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  color: $color;
+}
+
 .cursive-heading {
   @include cursiveHeading(white, 45px, false);
+
+  &.gredient {
+    @include cursiveHeading(inherit, 45px);
+
+    @media(max-width: 640px) {
+      font-size: 27px;
+    }
+  }
 
   @media(max-width: 991px) {
     font-size: 40px;
@@ -26,4 +53,8 @@
   @media(max-width: 640px) {
     font-size: 27px;
   }
+}
+
+.gredient-text {
+  @include gredientText(white, 45px);
 }

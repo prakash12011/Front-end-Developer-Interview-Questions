@@ -650,6 +650,8 @@ a {
 .site-footer {
   background: -webkit-linear-gradient(right, #f2d267 1%, #d4901a 35%, #f2d267 69%, #d4901a 100%);
   padding: 30px;
+  position: relative;
+  z-index: 9;
 
   .copyright-text {
     font-size: 21px;
@@ -659,6 +661,10 @@ a {
       font-size: 16px;
       line-height: 25px;
     }
+  }
+
+  @media(max-width: 640px) {
+    padding: 20px;
   }
 }
 
@@ -817,6 +823,11 @@ a {
   padding-top: 100px;
   padding-bottom: 100px;
 
+  &.p-50 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
   @media(max-width: 768px) {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -828,7 +839,14 @@ a {
 .text-center {
   text-align: center;
 }
+.text-left {
+  text-align: left;
+}
 .m0{ margin: 0; }
+.mb-1{ margin-bottom: 1rem; }
+.mt-1{ margin-top: 1rem; }
+.mt-2{ margin-top: 2rem; }
+.theme-color { color: #d7ab2f; }
 
 
 // Inner Page
@@ -1065,6 +1083,165 @@ a {
     }
   }
 
+  .course {
+    @media(max-width: 640px) {
+      .half.dgrid {
+        gap: 0;
+        text-align: center;
+        order: 1;
+
+        h1.gredient-text.text-left {
+          text-align: center;
+        }
+      }  
+      .read-more-capsule {
+        padding: 0.5rem 2rem;
+        font-size: 16px;
+      }
+    }
+
+    @media(max-width: 640px) {      
+      padding-top: 30px;
+
+      &:not(.course-2) {
+        padding-top: 0px;
+      }
+
+      .dgrid.col-1-1 {
+        gap: 10px;
+      } 
+      
+      h1.gredient-text.text-left {
+        font-size: 35px;
+      }
+
+    }
+  }
+
+  .aquarian-age {
+    background-image: url(../img/ex.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+  }
+
+  .kundalini-yoga {
+    background-image: url(../img/circle-bg.png);
+    background-size: contain;
+    background-position: 90% top;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    position: relative;
+
+    .join-us .content{
+      max-width: 600px;
+      margin-left: auto;
+      padding-right: 50px;
+      padding-left: 20px;
+      text-align: left;
+      
+      .section-description {
+        text-align: left;        
+      }
+    }
+
+    &-img {
+      position: absolute;
+      right: 0;
+      z-index: 99;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 900px;
+    }
+
+    @media(max-width: 1024px) {
+      overflow-x: hidden;
+
+      &-img { 
+        right: -140px;
+      }
+    }
+
+    @media(max-width: 768px) {
+      overflow: hidden;
+      background-size: 400px;
+
+      &-section.dgrid.col-1-1 {
+        grid-template-columns: 1.5fr 1fr;
+      }
+
+      &-img { 
+        width: 80%;
+        right: -70px;
+      }
+    }
+
+    @media(max-width: 640px) { 
+      background-position: center 10px;
+
+      &-section.dgrid.col-1-1 {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+
+      &-img { 
+        position: relative;
+        width: 90%;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+      }
+
+      .join-us .content {
+        padding-right: 20px;
+
+        p.section-description {
+          text-align: center;
+        }
+      }
+      
+    }
+  }
+
+  .eleven-moon {
+    .cursive-heading {
+      font-size: 55px;
+      padding: 0;
+
+      @media(max-width: 640px) {
+        font-size: 30px;
+      }
+    }
+  }
+
+  .journey {
+    h2.cursive-heading.gredient {
+      font-size: 55px;
+
+      @media(max-width: 1024px) {
+        font-size: 45px;
+      }
+
+      @media(max-width: 640px) {
+        font-size: 27px;
+      }
+    }
+    
+    .stand-lady {
+      height: calc(100% + 120px);
+      max-width: 100%;
+
+      @media(min-width: 1500px) {
+        left: 10%;        
+      }
+
+      @media(max-width: 991px) {
+        left: -10%;        
+      }
+    }
+  }
+
 }
 
 
@@ -1105,6 +1282,46 @@ a {
   @media(max-width: 640px) {
     font-size: 20px;
     margin: 0 auto;
+  }
+}
+
+.day {
+  text-align: center;
+
+  &-image {
+    min-height: 166px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-details {
+    margin-top: -20px;
+  }
+  
+  &-details-name {
+    font-size: 35px;
+  }
+
+  @media(max-width: 640px) { 
+    &-details-name {
+      font-size: 22px;
+    }
+  }
+}
+
+@media(max-width: 640px) {
+  .days.mt-1.dgrid.col_4 {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .days.mt-1.dgrid.col-1-1-1 {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+
+    .day:last-child {
+      grid-column: 1 / span 2;
+    }
   }
 }
 
