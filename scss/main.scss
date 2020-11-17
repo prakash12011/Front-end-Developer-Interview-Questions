@@ -232,18 +232,24 @@ a {
 
   .stand-lady {
     position: absolute;
-    top: -100px;
-    max-width: 700px;
+    top: -10px;
+    max-width: 750px;
+    transform: scale(1.1);
+    left: -50px;
 
     @media(max-width: 1300px) {
-      left: 0;
-      max-width: 50%;
+      left: -10%;
     }
 
     @media(max-width: 1199px) {
       left: -20%;
       max-width: 70%;
     }
+  }
+
+  .section-subtitle {
+    font-size: 30px;
+    margin-bottom: 10px;
   }
 
   .decorated-title {
@@ -302,6 +308,8 @@ a {
       margin-bottom: 20px;
       display: block;
       width: 100%;
+      height: 376px;
+      object-fit: cover;
     }
 
     &-title {
@@ -968,10 +976,18 @@ a {
 
     .abs-pic {
       position: absolute;
-      left: auto;
+      left: 0;
       max-height: 100%;
       z-index: 9;
       bottom: -25px;
+
+      &.shaddow-img {
+        padding: 10px;
+        background: linear-gradient(45deg, #f2d267 1%, #d4901a 35%, #f2d267 69%, #d4901a 100%);
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 10px 10px 20px rgba(0,0,0,0.15);
+      }
 
       &.right {
         right: 0;
@@ -982,6 +998,8 @@ a {
       }
 
       @media(max-width: 1299px) {
+        left: -5%;
+
         &.right {
           max-width: 600px;
         }
@@ -991,6 +1009,7 @@ a {
         max-width: 50vw;
         top: 50%;
         transform: translateY(-50%);
+        left: 0;
 
         &.right {
           top: 0;
@@ -1034,8 +1053,17 @@ a {
       }
     }
 
+    .cursive-heading.gredient {
+      text-align: left;
+      padding-left: 10px;
+    }
+
     @media(max-width: 767px) {
       overflow: hidden;
+
+      .cursive-heading.gredient {
+        text-align: center;
+      }
 
       .dgrid.col-1-1 {
         grid-template-columns: 1fr;
@@ -1308,6 +1336,15 @@ a {
       font-size: 22px;
     }
   }
+}
+
+.top-left-shaddow {
+  background: linear-gradient(45deg, #f2d267 1%, #d4901a 35%, #f2d267 69%, #d4901a 100%);
+  box-shadow: 5px 5px 20px rgba(0,0,0,.15);
+  padding: 10px 0 0 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 95%;
 }
 
 @media(max-width: 640px) {
