@@ -1257,8 +1257,14 @@ a {
     }
     
     .stand-lady {
-      height: calc(100% + 120px);
+      transform: scale(1);
+      height: calc(100% + 90px);
       max-width: 100%;
+      top: -50px;
+
+      @media(max-width: 1199px) {
+        left: -10%;        
+      }
 
       @media(min-width: 1500px) {
         left: 10%;        
