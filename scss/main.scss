@@ -1028,7 +1028,8 @@ a {
         left: auto;
         z-index: 0;
         overflow: hidden;
-        top: 0;
+        top: -10px;
+        max-height: 110%;
       }
 
       @media (max-width: 1299px) {
@@ -1362,10 +1363,16 @@ a {
 
   &-details {
     margin-top: -20px;
+
+    &-description {
+      color: #696969;
+    }
   }
 
   &-details-name {
     font-size: 35px;
+    font-family: 'Futura-Condensed';
+    color: #696969;
   }
 
   @media (max-width: 640px) {
