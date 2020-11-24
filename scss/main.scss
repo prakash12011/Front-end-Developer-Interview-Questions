@@ -893,6 +893,7 @@ a {
     min-height: 350px;
     background-image: url(../img/header-bg-mobile.jpg);
     background-position: center 50px;
+    z-index: 10;
 
     @media (max-width: 640px) {
       background-size: cover;
@@ -977,6 +978,8 @@ a {
   }
 
   .discount {
+    background-image: url(../img/83246048_318578185756851_5287424132323999744_n.jpg);
+    
     .cursive-heading {
       font-size: 55px;
       line-height: 140px;
@@ -1337,6 +1340,14 @@ a {
 
   &-text {
     position: relative;
+    transition: .5s;
+    cursor: pointer;
+
+    &:hover {
+      background: -webkit-linear-gradient(right, #f2d267 1%, #d4901a 35%, #f2d267 69%, #d4901a 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
 
   @media (max-width: 991px) {
@@ -1492,4 +1503,8 @@ a {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+}
+
+@media(min-width: 992px){
+  .lg-pl-40 { padding-left: 40px; }
 }
