@@ -1,6 +1,8 @@
+/*
+* Menu Functionality
+*/
 const burgerMenu = document.querySelector('.burger-menu');
 burgerMenu.addEventListener('click', function(e){
-  let target = e.target;
   let DropdownMenu = document.querySelector('.burger-menu .dropdown');
   DropdownMenu.classList.toggle('visible');
 });
