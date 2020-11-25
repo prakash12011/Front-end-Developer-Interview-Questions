@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'amsterdam-four';
+  src: url(../fonts/amsterdam-four.ttf);
+}
+@font-face {
+  font-family: 'RumbleBrave';
+  src: url(../fonts/RumbleBrave.ttf);
+}
+@font-face {
+  font-family: 'RumbleBraveOutline';
+  src: url(../fonts/Rumble/RumbleBraveOutline.otf);
+}
+@font-face {
+  font-family: 'Futura-Condensed';
+  font-weight: 600;
+  src: url(../fonts/Fonts/FuturaBtCNBold.ttf);
+}
+@font-face {
+  font-family: 'Futura-Condensed';
+  font-weight: 100;
+  src: url(../fonts/Fonts/Futura-CondensedLight.otf);  
+}
+@font-face {
+  font-family: 'FuturaBtBK';
+  src: url(../fonts/Fonts/FUTURAN.ttf);  
+}
+@font-face {
+  font-family: 'FuturaBtBK';
+  font-weight: 100;
+  font-style: italic;
+  src: url(../fonts/Fonts/FuturaBtBKLightItalic.ttf);  
+}
+@font-face {
+  font-family: 'FuturaBT';
+  font-weight: 500;
+  src: url(../fonts/Fonts/FuturaBT-medium.otf);
+}
+
+// @font-face {
+//   font-family: 'FUTUR';
+//   src: url(../fonts/Fonts/FUTUR_.TTF);
+// }
+// @font-face {
+//   font-family: amsterdam-four;
+//   src: url(../fonts/amsterdam-four.ttf);
+// }
+// @font-face {
+//   font-family: amsterdam-four;
+//   src: url(../fonts/amsterdam-four.ttf);
+// }
+// @font-face {
+//   font-family: amsterdam-four;
+//   src: url(../fonts/amsterdam-four.ttf);
+// }
+
+.amsterdam-four { font-family: "amsterdam-four", sans-serif !important; }
+.RumbleBrave { font-family: "RumbleBrave", sans-serif !important; }
+.FuturaBtBK { font-family: 'FuturaBtBK' !important; }
+.FuturaBT { font-family: 'FuturaBT' !important; }
+.philosopher { font-family: "philosopher",sans-serif !important; }
+.FuturaCondensed { font-family: 'Futura-Condensed' !important; }
+
+
+.fs-35 { font-size: 35px; line-height: 50px; }
+.fs-45 { font-size: 45px; line-height: 60px; }
+.fs-55 { font-size: 55px; line-height: 70px; }
+
+.fw-bold { font-weight: 500 !important; }
