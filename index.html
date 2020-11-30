@@ -6,6 +6,8 @@
     <title>Home</title>
     <link rel="stylesheet" href="https://use.typekit.net/vbh5fte.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 </head>
 <body>
   <div class="hero-section">
@@ -197,32 +199,36 @@
     <section class="testimonials section-p">
       <div class="container">
         <h1 class="section-title decorated-title">Testimonials</h1>
-        <div class="testimonial">
+        <div class="testimonial-carousel owl-carousel owl-theme">
           <!-- <p class="section-description text-center FuturaBtBK">I have just completed the Chakra Journey it is very powerful and transformative. It will raise your energy and fitness
           level, detox your emotional, physical and mental body and leave you wanting more!
           </p> -->
           <!-- <div class="testimonial-img-container">
             <img src="./img/testimonial-img.png" alt="" class="testimonial-img">
           </div> -->
-          <h3 class="testimonial-name text-center">Ginnah Siani</h3>
-          <p class="section-description text-center FuturaBtBK testimonial-description">
-            I did the Chakra Journey with Devi in Koh Phangan in July 2018 and had an amazing journey. This course was just a
-            wonderful way to review myself and my life to get a better understanding of why some things are the way they are. It is
-            a beautiful journey (but also uncomfortable sometimes when I had interesting realizations) and I warmly recommend it for
-            anyone who is interested in Kundalini and/or personal development. I have done another retreat with Devi before and also
-            taken drop-in classes with her. She is a truly special person who is dedicated to her path, to sharing her knowledge and
-            to help people grow and develop. I highly recommend spending time with her!!
-          </p>
+          <div class="testimonial">
+            <h3 class="testimonial-name text-center">Ginnah Siani</h3>
+            <p class="section-description text-center FuturaBtBK testimonial-description">
+              I did the Chakra Journey with Devi in Koh Phangan in July 2018 and had an amazing journey. This course was just a
+              wonderful way to review myself and my life to get a better understanding of why some things are the way they are. It is
+              a beautiful journey (but also uncomfortable sometimes when I had interesting realizations) and I warmly recommend it for
+              anyone who is interested in Kundalini and/or personal development. I have done another retreat with Devi before and also
+              taken drop-in classes with her. She is a truly special person who is dedicated to her path, to sharing her knowledge and
+              to help people grow and develop. I highly recommend spending time with her!!
+            </p>
+          </div>
+          <div class="testimonial">
+            <h3 class="testimonial-name text-center">Ginnah Siani</h3>
+            <p class="section-description text-center FuturaBtBK testimonial-description">
+              I did the Chakra Journey with Devi in Koh Phangan in July 2018 and had an amazing journey. This course was just a
+              wonderful way to review myself and my life to get a better understanding of why some things are the way they are. It is
+              a beautiful journey (but also uncomfortable sometimes when I had interesting realizations) and I warmly recommend it for
+              anyone who is interested in Kundalini and/or personal development. I have done another retreat with Devi before and also
+              taken drop-in classes with her. She is a truly special person who is dedicated to her path, to sharing her knowledge and
+              to help people grow and develop. I highly recommend spending time with her!!
+            </p>
+          </div>
         </div>
-        <h3 class="testimonial-name text-center">Ginnah Siani</h3>
-        <p class="section-description text-center FuturaBtBK testimonial-description">
-          I did the Chakra Journey with Devi in Koh Phangan in July 2018 and had an amazing journey. This course was just a
-          wonderful way to review myself and my life to get a better understanding of why some things are the way they are. It is
-          a beautiful journey (but also uncomfortable sometimes when I had interesting realizations) and I warmly recommend it for
-          anyone who is interested in Kundalini and/or personal development. I have done another retreat with Devi before and also
-          taken drop-in classes with her. She is a truly special person who is dedicated to her path, to sharing her knowledge and
-          to help people grow and develop. I highly recommend spending time with her!!
-        </p>
       </div>
     </div>
   </section>
@@ -283,6 +289,20 @@
   <footer class="site-footer">
     <p class="text-center copyright-text FuturaBtBK">Devi kaur Yoga. All Rights Reserved. ©2020</p>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+        }
+      })
+  </script>
 </body>
 </html>
