@@ -12,7 +12,7 @@
 img {
   max-width: 100%;
 }
-
+ 
 a {
   text-decoration: none;
 }
@@ -1441,7 +1441,7 @@ a {
 .burger-menu {
   position: relative;
 
-  &:hover .dropdown {
+  .dropdown.visible {
     opacity: 1;
     transform: translateY(0%);
   }
