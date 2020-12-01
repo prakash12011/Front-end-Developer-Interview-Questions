@@ -94,6 +94,10 @@ a {
       color: #d4901b;
       font-family: "Futura-Condensed";
       font-weight: 600;
+
+      @media(min-width: 1199px) {
+        margin-top: 100px;        
+      }
     }
 
     &-img {
@@ -237,12 +241,12 @@ a {
     transform: scale(1.1);
     left: -50px;
 
-    @media (max-width: 1300px) {
+    @media (max-width: 1399px) {
       left: -10%;
     }
 
     @media (max-width: 1199px) {
-      left: -20%;
+      left: -22%;
       max-width: 70%;
     }
   }
@@ -801,6 +805,7 @@ a {
 
   &.btn {
     font-size: 16px;
+    line-height: 16px;
     padding: 0.7rem 2rem;
     border-radius: 25px;
     transition: 0.5s;
@@ -1128,6 +1133,33 @@ a {
   .about-more {
     background-image: url(../img/DSC07935.jpg);
     overflow: hidden;
+
+    &.about {
+      @media(min-width: 1025px) {   
+        .dgrid.col-1-1 {
+          grid-template-columns: 1fr 200px;
+          gap: 0;
+        }
+        
+        img.abs-pic.right {
+          max-height: max-content;
+          width: 600px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+
+        .half:first-child {
+          position: relative;
+          z-index: 111;
+        }
+      }
+
+      @media(min-width: 1025px) and (max-width: 1399px) {
+        .dgrid.col-1-1 {
+          grid-template-columns: 1fr 500px;
+        }
+      }
+    }
 
     @media (max-width: 640px) {
       padding-top: 0;
