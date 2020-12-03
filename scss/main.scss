@@ -1154,9 +1154,15 @@ a {
         }
       }
 
-      @media(min-width: 1025px) and (max-width: 1399px) {
+      @media(min-width: 1400px) and (max-width: 1499px) {
         .dgrid.col-1-1 {
           grid-template-columns: 1fr 500px;
+        }
+      }
+
+      @media(min-width: 1025px) and (max-width: 1399px) {
+        .dgrid.col-1-1 {
+          grid-template-columns: 1fr 520px;
         }
       }
     }
