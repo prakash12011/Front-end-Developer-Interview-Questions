@@ -1043,6 +1043,10 @@ a {
         border-radius: 20px;
         overflow: hidden;
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
+
+        @media(max-width: 1366px) and (min-width: 1280px) {
+          left: -5%;
+        }
       }
 
       &.right {
