@@ -92,8 +92,8 @@ a {
       text-align: center;
       font-size: 45px;
       color: #d4901b;
-      font-family: "Futura-Condensed";
-      font-weight: 600;
+      font-family: "FuturaBT";
+      font-weight: 500;
 
       @media(min-width: 1199px) {
         margin-top: 100px;        
@@ -242,7 +242,8 @@ a {
     left: -50px;
 
     @media (max-width: 1399px) {
-      left: -10%;
+      left: -5%;
+      max-width: 700px;
     }
 
     @media (max-width: 1199px) {
@@ -307,6 +308,11 @@ a {
       align-items: flex-start;
       height: 100%;
       justify-content: space-between;
+
+      &-data {
+        max-height: 350px;
+        overflow: hidden;
+      }
     }
 
     &:focus,
@@ -527,10 +533,11 @@ a {
 }
 
 .session {
-  background-image: url("../img/session.jpg");
-  background-position: right top;
-  min-height: 830px;
+  background-image: url(../img/session.jpg);
+  background-position: center top;
   background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   &.section-p {
     padding-top: 300px;
@@ -775,7 +782,8 @@ a {
 }
 
 .section-description {
-  font-family: philosopher, sans-serif;
+  font-family: 'FuturaBtBK';
+  // font-family: philosopher, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 22px;
